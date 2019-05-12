@@ -605,6 +605,12 @@ input[type="tel"]:invalid:focus {
       background-image: url("../img/icon-plus-mobile.svg");
       opacity: 0.2; }
 
+.catalog__img-link {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-width: 50%; }
+
 .catalog__item-title {
   width: 75px;
   margin: 0 0 12px 0;
@@ -631,7 +637,8 @@ input[type="tel"]:invalid:focus {
 .catalog__table-wrapper {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
-          flex-grow: 1; }
+          flex-grow: 1;
+  max-width: 50%; }
 
 .catalog__table {
   position: relative;
@@ -719,6 +726,14 @@ input[type="tel"]:invalid:focus {
       width: 70%;
       margin-bottom: 20px; }
   .catalog__img-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    max-width: 100%;
     margin-top: -122px;
     margin-bottom: 35px; }
     .catalog__img-link--small {
@@ -733,6 +748,7 @@ input[type="tel"]:invalid:focus {
       height: 208px; }
   .catalog__table-wrapper {
     width: 100%;
+    max-width: 100%;
     margin-bottom: 32px; }
   .catalog__table td {
     padding: 7px 0 8px; }
@@ -2132,7 +2148,7 @@ input[type="tel"]:invalid:focus {
     width: 50%;
     padding: 10px 0 0 0;
     background-color: transparent; }
-    .main-menu--page-index::before {
+    .main-menu--index::before {
       position: absolute;
       top: 0;
       right: 0;
@@ -2143,9 +2159,9 @@ input[type="tel"]:invalid:focus {
   .main-menu__link {
     padding: 10px 17px;
     font-size: 20px; }
-    .main-menu__link--page-index {
+    .main-menu__link--index {
       color: #ffffff; }
-  .main-menu__link--page-index.main-menu__link--active::after {
+  .main-menu__link--index.main-menu__link--active::after {
     background-color: #ffffff; } }
 
 .map {
@@ -2309,7 +2325,7 @@ input[type="tel"]:invalid:focus {
 @media (min-width: 1300px) {
   .page-body {
     position: relative; }
-  .page-body--previvev::before {
+  .page-body--previvew::before {
     position: absolute;
     top: 0;
     right: 0;
@@ -2323,7 +2339,7 @@ input[type="tel"]:invalid:focus {
     background-color: #64a83b;
     z-index: -1; } }
   @media (min-width: 1300px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1300px) and (min-resolution: 144dpi), (min-width: 1300px) and (min-resolution: 1.5dppx) {
-    .page-body--previvev::before {
+    .page-body--previvew::before {
       background-image: url("../img/index-background-desktop@2x.jpg"); } }
 
 .page-footer {
